@@ -16,6 +16,8 @@
  * @license    https://d2d-soft.com/license/AFL.txt
  */
 
+error_reporting(0);
+
 session_start();
 define('DS', DIRECTORY_SEPARATOR);
 define('_ROOT_DIR', dirname(__FILE__));
