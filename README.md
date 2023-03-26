@@ -8,6 +8,7 @@
 - [Drupal Commerce to Shopify Migration](https://d2d-soft.com/shopify-migration/396-drupal-commerce-to-shopify-migration-service.html)
 - [HikaShop to Shopify Migration](https://d2d-soft.com/shopify-migration/470-1942-hikashop-to-shopify-migration-tool.html#/72-entities-1000)
 - [J2Store to Shopify Migration](https://d2d-soft.com/shopify-migration/513-2137-j2store-to-shopify-migration-tool.html#/72-entities-1000)
+- [JigoShop to Shopify Migration](https://d2d-soft.com/shopify-migration/552-2317-jigoshop-to-shopify-migration-tool.html#/72-entities-1000)
 - [Loaded Commerce to Shopify Migration](https://d2d-soft.com/shopify-migration/397-1587-loaded-to-shopify-migration-tool.html#/72-entities-1000)
 - [Magento to Shopify Migration](https://d2d-soft.com/shopify-migration/398-1592-magento-to-shopify-migration-tool.html#/72-entities-1000)
 - [OpenCart to Shopify Migration](https://d2d-soft.com/shopify-migration/399-1597-opencart-to-shopify-migration-tool.html#/72-entities-1000)
@@ -29,6 +30,7 @@
 - [Drupal Commerce](https://drupalcommerce.org/)
 - [HikaShop](https://www.hikashop.com/)
 - [J2Store](https://www.j2store.org/)
+- JigoShop
 - [Loaded Commerce](https://loadedcommerce.com/)
 - [Magento](https://magento.com/)
 - [OpenCart](https://www.opencart.com/)
