@@ -1134,6 +1134,7 @@
                     var _this = $(this);
                     var seo_value = _this.val();
                     if(!seo_value){
+                        $(container).find('.seo-config-section').css({display: 'none'});
                         return false;
                     }
                     var seoPlugin = seo_value.split('|##|');
