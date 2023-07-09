@@ -2,6 +2,7 @@
 [Shopify Data Migration Tool](https://d2d-soft.com/37-shopify-migration) is a solution for migrating data to Shopify from the another platform. The tool support migrating many entity types (taxes, manufacturers, categories, products, customers, orders, reviews) with many options. The tool can work in the local environment or the online environment. We also provide the [Custom Migration Service](https://d2d-soft.com/migration-services/296-data-migration-customization.html) if you have a specific requirement. 
 
 ## Products
+- [AmeriCommerce to Shopify Migration](https://d2d-soft.com/shopify-migration/780-7257-americommerce-to-shopify-migration-tool.html#/72-entities-1000)
 - [BigCommerce to Shopify Migration](https://d2d-soft.com/shopify-migration/423-1717-bigcommerce-to-shopify-migration-tool.html#/72-entities-1000)
 - [CS-Cart to Shopify Migration](https://d2d-soft.com/shopify-migration/394-1581-cs-cart-to-cs-cart-migration-tool.html#/72-entities-1000)
 - [CubeCart to Shopify Migration](https://d2d-soft.com/shopify-migration/395-1582-cubecart-to-shopify-migration-tool.html#/72-entities-1000)
@@ -17,6 +18,7 @@
 - [osCommerce to Shopify Migration](https://d2d-soft.com/shopify-migration/400-1602-oscommerce-to-shopify-migration-tool.html#/72-entities-1000)
 - [OXID-eShop to Shopify Migration](https://d2d-soft.com/shopify-migration/401-1607-oxid-eshop-to-shopify-migration-tool.html#/72-entities-1000)
 - [PrestaShop to Shopify Migration](https://d2d-soft.com/shopify-migration/402-1612-prestashop-to-shopify-migration-tool.html#/72-entities-1000)
+- [Salesforce to Shopify Migration](https://d2d-soft.com/shopify-migration/728-6836-salesforce-to-shopify-migration-tool.html#/72-entities-1000)
 - [Shopify to Shopify Migration](https://d2d-soft.com/shopify-migration/403-1617-shopify-to-shopify-migration-tool.html#/72-entities-1000)
 - [VirtueMart to Shopify Migration](https://d2d-soft.com/shopify-migration/404-1622-virtuemart-to-shopify-migration-tool.html#/72-entities-1000)
 - [Volusion to Shopify Migration](https://d2d-soft.com/shopify-migration/651-6033-volusion-to-shopify-migration-tool.html#/72-entities-1000)
@@ -28,6 +30,7 @@
 - [ZenCart to Shopify Migration](https://d2d-soft.com/shopify-migration/409-1652-zencart-to-shopify-migration-tool.html#/72-entities-1000)
 
 ## Supported Platforms
+- [AmeriCommerce](https://www.americommerce.com/)
 - [BigCommerce](https://www.bigcommerce.com/)
 - [CS-Cart](https://www.cs-cart.com/)
 - [CubeCart](https://www.cubecart.com/)
@@ -43,6 +46,7 @@
 - [osCommerce](https://www.oscommerce.com/)
 - [OXID-eShop](https://www.oxid-esales.com)
 - [PrestaShop](https://www.prestashop.com)
+- [Salesforce](https://www.salesforce.com/)
 - [Shopify](https://www.shopify.com/)
 - [VirtueMart](https://virtuemart.net/)
 - [Volusion](https://volusion.com/)

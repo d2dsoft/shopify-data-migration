@@ -1341,6 +1341,83 @@
                     window.open(url, '_blank');
                 });
 
+                $(container).on('click', '.oauth-authenticate', function(){
+                    showLoading();
+                    var form = $('#setup-form');
+                    resetFormValidate(form);
+                    var rules = getFormValidateRule(form);
+                    form.validate({
+                        rules: rules,
+                        errorClass: "message-valid"
+                    });
+                    var validate = form.valid();
+                    if(!validate){
+                        hideLoading();
+                        return false;
+                    }
+                    var _this = $(this);
+                    var stateElement = _this.closest('.form-group').find('.oauth_state');
+                    var state = stateElement.val();
+                    var type = _this.data('type');
+                    var platform = $('#' + type + '-type', container).val();
+                    var url = $('#' + type + '-url', container).val();
+                    var data = {
+                        process: 'authenticate',
+                        state: state,
+                        type: type,
+                        platform: platform,
+                        url: url
+                    };
+                    callProcess(settings.url, data).done(function(response){
+                        hideLoading();
+                        if(response.status == 'success'){
+                            var state = response.state;
+                            stateElement.val(state);
+                            var action = response.action;
+                            if(action == 'auth'){
+                                window.open(response.url);
+                            } else {
+                                showAlert(response.message);
+                            }
+                        } else if(response.status == 'error'){
+                            if(response.message){
+                                showAlert(response.message);
+                            }
+                        }
+                    }).fail(function(xhr, status, error){
+                        hideLoading();
+                        showAlert(getRetryMessage());
+                    });
+                });
+
+                $(container).on('click', '.checkbox-dependency', function(){
+                    var _this = $(this);
+                    var uncheck = _this.data('uncheck');
+                    var check = _this.data('check');
+                    if(uncheck == undefined){
+                        uncheck = '';
+                    }
+                    if(check == undefined){
+                        check = '';
+                    }
+                    var wrap = _this.closest('.dependency-wrap');
+                    if(_this.is(':checked')){
+                        if(check){
+                            $(check, wrap).show();
+                        }
+                        if(uncheck){
+                            $(uncheck, wrap).hide();
+                        }
+                    } else {
+                        if(check){
+                            $(check, wrap).hide();
+                        }
+                        if(uncheck){
+                            $(uncheck, wrap).show();
+                        }
+                    }
+                });
+
                 registerEvents();
 
             }
