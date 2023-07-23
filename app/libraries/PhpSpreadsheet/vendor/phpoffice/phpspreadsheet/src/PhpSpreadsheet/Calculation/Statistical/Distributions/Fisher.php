@@ -1,0 +1,90 @@
+<?php
+
+/**
+ * D2dSoft
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL v3.0) that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL: https://d2d-soft.com/license/AFL.txt
+ *
+ * DISCLAIMER
+ * Do not edit or add to this file if you wish to upgrade this extension/plugin/module to newer version in the future.
+ *
+ * @author     D2dSoft Developers <developer@d2d-soft.com>
+ * @copyright  Copyright (c) 2021 D2dSoft (https://d2d-soft.com)
+ * @license    https://d2d-soft.com/license/AFL.txt
+ */
+
+namespace PhpOffice\PhpSpreadsheet\Calculation\Statistical\Distributions;
+
+use PhpOffice\PhpSpreadsheet\Calculation\ArrayEnabled;
+use PhpOffice\PhpSpreadsheet\Calculation\Exception;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
+
+class Fisher
+{
+    use ArrayEnabled;
+
+    /**
+     * FISHER.
+     *
+     * Returns the Fisher transformation at x. This transformation produces a function that
+     *        is normally distributed rather than skewed. Use this function to perform hypothesis
+     *        testing on the correlation coefficient.
+     *
+     * @param mixed $value Float value for which we want the probability
+     *                      Or can be an array of values
+     *
+     * @return array|float|string
+     *         If an array of numbers is passed as an argument, then the returned result will also be an array
+     *            with the same dimensions
+     */
+    public static function distribution($value)
+    {
+        if (is_array($value)) {
+            return self::evaluateSingleArgumentArray([self::class, __FUNCTION__], $value);
+        }
+
+        try {
+            DistributionValidations::validateFloat($value);
+        } catch (Exception $e) {
+            return $e->getMessage();
+        }
+
+        if (($value <= -1) || ($value >= 1)) {
+            return ExcelError::NAN();
+        }
+
+        return 0.5 * log((1 + $value) / (1 - $value));
+    }
+
+    /**
+     * FISHERINV.
+     *
+     * Returns the inverse of the Fisher transformation. Use this transformation when
+     *        analyzing correlations between ranges or arrays of data. If y = FISHER(x), then
+     *        FISHERINV(y) = x.
+     *
+     * @param mixed $probability Float probability at which you want to evaluate the distribution
+     *                      Or can be an array of values
+     *
+     * @return array|float|string
+     *         If an array of numbers is passed as an argument, then the returned result will also be an array
+     *            with the same dimensions
+     */
+    public static function inverse($probability)
+    {
+        if (is_array($probability)) {
+            return self::evaluateSingleArgumentArray([self::class, __FUNCTION__], $probability);
+        }
+
+        try {
+            DistributionValidations::validateFloat($probability);
+        } catch (Exception $e) {
+            return $e->getMessage();
+        }
+
+        return (exp(2 * $probability) - 1) / (exp(2 * $probability) + 1);
+    }
+}

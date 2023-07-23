@@ -69,7 +69,9 @@ abstract class App_Controller_Abstract
         $config['upload_dir'] = _ROOT_DIR . '/pub/media';
         $config['upload_location'] = 'pub/media';
         $config['log_dir'] = _ROOT_DIR . '/pub/log';
-        $app->setConfig($config)->setRequest($_REQUEST);
+        $app->setConfig($config)
+            ->setRequest($_REQUEST)
+            ->setPluginManager($bootstrap);
         $this->app = $app;
         return $this->app;
     }

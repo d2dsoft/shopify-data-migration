@@ -409,4 +409,18 @@ class Bootstrap
     public function __($text){
         echo $text;
     }
+
+    /**
+     * Load plugin
+     * @var $name string
+     * @return object | boolean
+     */
+    public function getPlugin($name){
+        $class_name = 'App_Plugin_' . $name;
+        if(!class_exists($class_name)){
+            return false;
+        }
+        $class = new $class_name();
+        return $class;
+    }
 }

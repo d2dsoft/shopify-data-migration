@@ -18,4 +18,5 @@
 
 return array(
     'App_Controller_' => _APP_DIR . '/controllers',
+    'App_Plugin_' => _APP_DIR . '/plugins',
 );
