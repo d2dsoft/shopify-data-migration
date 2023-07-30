@@ -19,7 +19,7 @@
 class App_Plugin_Excel
 {
     public function readFile($file_path, $start, $limit = 10, $total = false, $lower_key = false, $sheet_index = 0){
-        if(class_exists('PhpOffice\PhpSpreadsheet\Spreadsheet')){
+        if(class_exists('\\PhpOffice\\PhpSpreadsheet\\Spreadsheet')){
             return $this->readFileBySpreadsheet($file_path, $start, $limit, $total, $lower_key, $sheet_index);
         } else if(class_exists('PHPExcel')){
             return $this->readFileByPHPExcel($file_path, $start, $limit, $total, $lower_key, $sheet_index);
@@ -109,10 +109,10 @@ class App_Plugin_Excel
             );
         }
         try {
-            if(!class_exists('PhpOffice\PhpSpreadsheet\Spreadsheet')){
+            if(!class_exists('\\PhpOffice\\PhpSpreadsheet\\Spreadsheet')){
                 include_once dirname(__FILE__) . '/../libraries/PhpSpreadsheet/PhpSpreadsheet.php';
             }
-            $class_name = 'PhpOffice\PhpSpreadsheet\IOFactory';
+            $class_name = '\\PhpOffice\\PhpSpreadsheet\\IOFactory';
             /* @var $excelReader \PhpOffice\PhpSpreadsheet\Reader\Xlsx */
             $excelReader = $class_name::createReaderForFile($file_path);
             $spreadsheet = $excelReader->load($file_path);
