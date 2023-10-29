@@ -3,6 +3,7 @@
 
 ## Products
 - [AmeriCommerce to Shopify Migration](https://d2d-soft.com/shopify-migration/780-7257-americommerce-to-shopify-migration-tool.html#/72-entities-1000)
+- [Bagisto to Shopify Migration](https://d2d-soft.com/shopify-migration/947-8966-bagisto-to-shopify-migration-tool.html#/72-entities-1000)
 - [BigCommerce to Shopify Migration](https://d2d-soft.com/shopify-migration/423-1717-bigcommerce-to-shopify-migration-tool.html#/72-entities-1000)
 - [CS-Cart to Shopify Migration](https://d2d-soft.com/shopify-migration/394-1581-cs-cart-to-cs-cart-migration-tool.html#/72-entities-1000)
 - [CubeCart to Shopify Migration](https://d2d-soft.com/shopify-migration/395-1582-cubecart-to-shopify-migration-tool.html#/72-entities-1000)
@@ -34,6 +35,7 @@
 
 ## Supported Platforms
 - [AmeriCommerce](https://www.americommerce.com/)
+- [Bagisto](https://bagisto.com/)
 - [BigCommerce](https://www.bigcommerce.com/)
 - [CS-Cart](https://www.cs-cart.com/)
 - [CubeCart](https://www.cubecart.com/)

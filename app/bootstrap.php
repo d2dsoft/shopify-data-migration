@@ -151,7 +151,9 @@ class Bootstrap
         if(!$route && isset($_SERVER['PATH_INFO'])){
             $route = $_SERVER['PATH_INFO'];
         }
-        $route = ltrim($route, '/');
+        if($route){
+            $route = ltrim($route, '/');
+        }
         return $route;
     }
 
