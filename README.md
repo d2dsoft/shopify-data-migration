@@ -2,6 +2,7 @@
 [Shopify Data Migration Tool](https://d2d-soft.com/37-shopify-migration) is a solution for migrating data to Shopify from the another platform. The tool support migrating many entity types (taxes, manufacturers, categories, products, customers, orders, reviews) with many options. The tool can work in the local environment or the online environment. We also provide the [Custom Migration Service](https://d2d-soft.com/migration-services/296-data-migration-customization.html) if you have a specific requirement. 
 
 ## Products
+- [AbanteCart to Shopify Migration](https://d2d-soft.com/shopify-migration/1134-10872-abantecart-to-shopify-migration-tool.html#/72-entities-1000)
 - [AmeriCommerce to Shopify Migration](https://d2d-soft.com/shopify-migration/780-7257-americommerce-to-shopify-migration-tool.html#/72-entities-1000)
 - [Bagisto to Shopify Migration](https://d2d-soft.com/shopify-migration/947-8966-bagisto-to-shopify-migration-tool.html#/72-entities-1000)
 - [BigCommerce to Shopify Migration](https://d2d-soft.com/shopify-migration/423-1717-bigcommerce-to-shopify-migration-tool.html#/72-entities-1000)
@@ -36,6 +37,7 @@
 - [ZenCart to Shopify Migration](https://d2d-soft.com/shopify-migration/409-1652-zencart-to-shopify-migration-tool.html#/72-entities-1000)
 
 ## Supported Platforms
+- [AbanteCart](https://www.abantecart.com/)
 - [AmeriCommerce](https://www.americommerce.com/)
 - [Bagisto](https://bagisto.com/)
 - [BigCommerce](https://www.bigcommerce.com/)
