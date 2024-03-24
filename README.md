@@ -20,6 +20,7 @@
 - [Magento to Shopify Migration](https://d2d-soft.com/shopify-migration/398-1592-magento-to-shopify-migration-tool.html#/72-entities-1000)
 - [MarketPress to Shopify Migration](https://d2d-soft.com/shopify-migration/577-2437-marketpress-to-shopify-migration-tool.html#/72-entities-1000)
 - [OpenCart to Shopify Migration](https://d2d-soft.com/shopify-migration/399-1597-opencart-to-shopify-migration-tool.html#/72-entities-1000)
+- [osCMax to Shopify Migration](https://d2d-soft.com/shopify-migration/1201-11555-oscmax-to-shopify-migration-tool.html#/72-entities-1000)
 - [osCommerce to Shopify Migration](https://d2d-soft.com/shopify-migration/400-1602-oscommerce-to-shopify-migration-tool.html#/72-entities-1000)
 - [OXID-eShop to Shopify Migration](https://d2d-soft.com/shopify-migration/401-1607-oxid-eshop-to-shopify-migration-tool.html#/72-entities-1000)
 - [PrestaShop to Shopify Migration](https://d2d-soft.com/shopify-migration/402-1612-prestashop-to-shopify-migration-tool.html#/72-entities-1000)
@@ -55,6 +56,7 @@
 - [Magento](https://magento.com/)
 - MarketPress
 - [OpenCart](https://www.opencart.com/)
+- osCMax
 - [osCommerce](https://www.oscommerce.com/)
 - [OXID-eShop](https://www.oxid-esales.com)
 - [PrestaShop](https://www.prestashop.com)
